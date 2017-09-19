@@ -1,16 +1,18 @@
-var genNum = Math.floor(Math.random() * 12);
-var btnOne = genNum;
-	console.log(btnOne);
-// TEST ^^
-var btnTwo;
-var btnThree;
-var btnFour;
-//------------------------
+var btnOne = Math.floor(Math.random() * 12);
+	console.log("btnOne: " + btnOne);
 
-var winningNum;
-// -winningNum (19 - 120)
-//how do I ensure random winningNum is within range?
-//Google: "javascript random number range"
+var btnTwo = Math.floor(Math.random() * 12);
+	console.log("btnTwo: " + btnTwo);
+
+var btnThree = Math.floor(Math.random() * 12);
+	console.log("btnThree: " + btnThree);
+
+var btnFour = Math.floor(Math.random() * 12);
+	console.log("btnFour: " + btnFour);
+
+var winningNum = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+	console.log("winningNum: " + winningNum);
+
 
 var totalNum; //keypress + keypress + keypress
 
@@ -27,20 +29,14 @@ var win;
 var lose;
 // totalNum > winningNum
 
-var totalWins;
-var totalLosses;
+var totalWins = 0;
+var totalLosses = 0;
 
 
-
-document.getElementByID('winNum').innerHTML = winningNum;
-document.getElementByID('sum').innerHTML = totalNum;
-document.getElementByID('wins').innerHTML = totalWins;
-document.getElementByID('losses').innerHTML = totalLosses;
-//User jQuery to auto push ^ values instead of document.GEBID
-
-
-
-
+$( "#winNum" ).html(winningNum);
+$( "#sum" ).html(totalNum);
+$( "#wins" ).html("Wins: " + totalWins);
+$( "#losses" ).html("Losses: " + totalLosses);
 
 
 
