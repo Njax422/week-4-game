@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
- -->	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Crystal's Collector</title>
 </head>
 <body>
@@ -18,8 +18,10 @@
 		</div>
 			<div id="" class="col-sm-6">
 				<h3 class="text-center">Instructions</h3>
-					<p> Paste instructions here
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					<p> 
+					There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. 
+					You win the game by matching your total score to the random number. You lose the game if your total score exceeds the random number. <br>
+					The value of each crystal is hidden from you until you click on it. Each time the game starts, the random number and crystal values will change. 
 					</p>
 				<h3 class="text-center">Score Board</h3>
 				<span>
@@ -38,11 +40,19 @@
 					<h4 id="sum" class="text-center"></h4>
 				</span>
 
-				<h3 class="text-center">Crystal Buttons</h3>
-				<span>
-					<h4 id="" class="text-center"></h4>
-				</span>
-			</div>
+				<h3 class="text-center">Crystals</h3>
+					<div class="panel panel-default" id="crystals-random-number-selector">
+		                <div class="panel-body borderless">
+
+		                    <button id="button-1" class="btn btn-default"><img src="assets/images/c1.png" height="100" width="100"></button>
+
+		                    <button id="button-2" class="btn btn-default"><img src="assets/images/c2.png" height="100" width="100"></button>
+
+		                    <button id="button-3" class="btn btn-default"><img src="assets/images/c3.jpeg" height="100" width="100"></button>
+
+		                    <button id="button-4" class="btn btn-default"><img src="assets/images/c4.jpeg" height="100" width="100"></button>
+		                </div>
+					</div>
 		<div class="col-sm-3">
 		</div>
 	</div>

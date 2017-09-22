@@ -1,0 +1,18 @@
+body {
+	background-image: url('https://wallpaperbrowse.com/media/images/background-18.jpg');
+	color: black;
+}
+
+p {
+	font-size: 16px;
+}
+
+.borderless {
+	background-color: #0a82bc;
+	border: 0;
+	  box-shadow: none;
+}
+
+.btn {
+	margin-left: 15px;
+}
